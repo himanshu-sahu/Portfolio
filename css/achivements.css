@@ -1,0 +1,61 @@
+.achivements {
+   margin-top: 7rem;
+   font-family: "Ubuntu", sans-serif;
+}
+.achivements .container {
+   width: 70%;
+}
+.achivements .title {
+   color: whitesmoke;
+   font-size: 2.3rem;
+   font-weight: 400;
+   position: relative;
+   margin-bottom: 2rem;
+   opacity: 0.9;
+}
+.achivements .title::after {
+   content: "";
+   position: absolute;
+   bottom: 1rem;
+   opacity: 0.3;
+   width: 28rem;
+   height: 0.1px;
+   background-color: var(--main-color);
+   transform: translateX(5%);
+}
+.achivements-content {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   overflow: hidden;
+}
+.achivements-content img {
+   width: 300px;
+   height: 200px;
+   position: relative;
+   border-radius: 5px;
+   filter: drop-shadow(3px 3px 3px var(--main-color)) invert(30%);
+   transition: all 200ms linear;
+}
+.achivements-content img:hover{
+   filter: none;
+}
+.achivements .details {
+   position: relative;
+   /* z-index: 100; */
+   bottom: 150px;
+}
+.achivements .details:hover {
+   opacity: 0;
+   cursor: pointer;
+}
+.achivements-card {
+   text-align: center;
+}
+.achivements-card h4 {
+   color: black;
+   font-size: 2rem;
+}
+.achivements-card p {
+   color: var(--main-color);
+}

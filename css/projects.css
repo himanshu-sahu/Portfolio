@@ -1,0 +1,110 @@
+.project {
+   margin-top: 20rem;
+   font-family: "Ubuntu", sans-serif;
+   margin-bottom: 7rem;
+   display: flex;
+}
+.project .container {
+   width: 80%;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   margin-top: 7rem;
+}
+.project .title {
+   color: whitesmoke;
+   font-size: 2.3rem;
+   font-weight: 400;
+   position: relative;
+   margin-bottom: 2rem;
+   opacity: 0.9;
+}
+.project .title::after {
+   content: "";
+   position: absolute;
+   bottom: 1rem;
+   opacity: 0.3;
+   width: 28rem;
+   height: 0.1px;
+   background-color: var(--main-color);
+   transform: translateX(5%);
+}
+.project-content {
+   margin-top: 2rem;
+   display: flex;
+   justify-items: center;
+   align-items: center;
+}
+.project-card {
+   flex-direction: column;
+   align-items: center;
+}
+
+.project-card {
+   text-align: center;
+   position: relative;
+   background-color: rgb(151, 145, 240);
+   border-radius: 5px;
+   padding: 0.5rem;
+   margin: 1rem 0.5rem;
+}
+.project-card p {
+   width: 100%;
+   margin-bottom: 1rem;
+}
+
+.project-card h3 {
+   color: black;
+   font-family: "Caveat", cursive;
+   text-decoration: underline;
+   font-size: 2.5rem;
+   padding: 10px 0;
+   transition: all 0.3s ease;
+}
+.project-card h3:hover {
+   transform: scale(1.1);
+}
+
+.project-card a {
+   color: darkslategray;
+   font-size: 0.9rem;
+   transition: all 0.5s ease;
+}
+
+.project-card a:hover {
+   color: black;
+}
+
+.project-card a i {
+   margin: 0px 5px;
+   transition: all 0.2s ease;
+   margin-bottom: 0.7rem;
+}
+.project-card a i:hover {
+   transform: scale(1.1);
+}
+
+@media screen and (max-width: 1000px) {
+   .project-card h3 {
+      font-size: 2rem;
+   }
+}
+@media screen and (max-width: 768px) {
+   .project .title {
+      text-align: center;
+      text-decoration: underline double;
+   }
+   .project .title::after {
+      display: none;
+   }
+   .project-content {
+      flex-direction: column;
+   }
+   .project-card img {
+      display: none;
+   }
+   .project-card {
+      bottom: 0;
+   }
+}
