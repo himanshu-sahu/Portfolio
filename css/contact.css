@@ -34,9 +34,11 @@
    display: flex;
    color: aliceblue;
    justify-content: space-around;
+   padding: 2rem;
 }
 .contact-about {
    padding: 1rem;
+   width: 50%;
 }
 
 .contact-about p {
@@ -53,13 +55,14 @@ input {
    font-weight: lighter;
    background-color: #013a63;
    color: var(--main-color);
+   border-radius: 3px;
 }
 ::placeholder {
    color: white;
-   opacity: 0.5;
 }
 
 textarea {
+   border-radius: 3px;
    width: 90%;
    min-width: 100%;
    margin: 3px;
@@ -101,7 +104,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 .personal-details {
    display: flex;
-   min-width: 40%;
+   min-width: 50%;
    flex-direction: column;
    justify-content: center;
    align-items: flex-start;
