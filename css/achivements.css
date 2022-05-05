@@ -133,6 +133,13 @@
  }
 }
 @media (max-width : 768px) {
+   .achivements .title {
+      text-align: center;
+      text-decoration: underline double;
+   }
+   .achivements .title::after {
+      display: none;
+   }
    .coding-profiles{
       flex-direction: column;
    }

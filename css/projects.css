@@ -179,6 +179,44 @@
 .product-image:hover img {
    transform: scale(0, 0);
 }
+.last{
+   justify-content: center;
+   align-items: center;
+}
+
+.more-projects h5 {
+   bottom: 0;
+   margin-top: auto;
+   margin-top: 1rem;
+}
+.more-projects h5 a{
+   color: var(--main-color);
+   display: inline-block;
+   position: relative;
+   transition: all ease 300ms;
+}
+.more-projects h5 a:hover {
+   transform: scale(1.1);
+   
+}
+.more-projects h5 a:after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 1.3px;
+   bottom: 2;
+   left: 1;
+   background-color:var(--main-color);
+   transform-origin: bottom right;
+   transition: transform 0.25s ease-out;
+   margin-top: 1rem;
+ }
+ 
+ .more-projects h5 a:hover:after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+ }
 @media screen and (max-width: 1500px){
    
    #project-conatiner .product-details h1{
